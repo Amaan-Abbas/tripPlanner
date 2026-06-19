@@ -1,0 +1,262 @@
+/* Form and Settings styling */
+
+.config-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 680px;
+  margin: 2rem auto;
+  width: 100%;
+}
+
+.api-config-card {
+  padding: 1.5rem;
+  border-left: 4px solid var(--secondary-color);
+}
+
+.api-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.api-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  color: var(--text-main);
+}
+
+.api-status {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-active {
+  background: rgba(52, 211, 153, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(52, 211, 153, 0.3);
+}
+
+.status-missing {
+  background: rgba(248, 113, 113, 0.15);
+  color: #f87171;
+  border: 1px solid rgba(248, 113, 113, 0.3);
+}
+
+.api-help-text {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  margin-top: 0.5rem;
+}
+
+.api-help-text a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.api-help-text a:hover {
+  text-decoration: underline;
+}
+
+/* Multi-step Form Card */
+.form-card {
+  padding: 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.form-step-indicator {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.form-step-indicator::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.05);
+  z-index: 1;
+}
+
+.step-dot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #0d1423;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-family: var(--font-header);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  position: relative;
+  z-index: 2;
+  transition: var(--transition-smooth);
+}
+
+.step-dot.active {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  box-shadow: 0 0 12px var(--primary-glow);
+  background: #0d1423;
+}
+
+.step-dot.completed {
+  background: var(--primary-gradient);
+  border-color: transparent;
+  color: #fff;
+}
+
+/* Form Options Selection Grid */
+.option-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.option-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: var(--inner-radius);
+  padding: 1.25rem 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.option-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.option-card.selected {
+  background: rgba(0, 210, 255, 0.06);
+  border-color: var(--primary-color);
+  box-shadow: inset 0 0 10px rgba(0, 210, 255, 0.1);
+}
+
+.option-icon {
+  font-size: 1.5rem;
+  color: var(--text-muted);
+  transition: var(--transition-smooth);
+}
+
+.option-card.selected .option-icon {
+  color: var(--primary-color);
+  filter: drop-shadow(0 0 4px var(--primary-glow));
+}
+
+.option-title {
+  font-family: var(--font-header);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+/* Checkboxes grid */
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.checkbox-tile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  user-select: none;
+}
+
+.checkbox-tile:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.checkbox-tile.checked {
+  background: rgba(168, 85, 247, 0.08);
+  border-color: var(--secondary-color);
+}
+
+.checkbox-tile input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.custom-checkbox {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  color: transparent;
+  transition: var(--transition-smooth);
+}
+
+.checkbox-tile.checked .custom-checkbox {
+  background: var(--secondary-gradient);
+  border-color: transparent;
+  color: white;
+}
+
+.checkbox-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Navigation Controls */
+.form-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 1.5rem;
+}
+
+.form-step-content {
+  min-height: 220px;
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
