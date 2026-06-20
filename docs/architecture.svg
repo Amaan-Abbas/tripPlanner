@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1427.9494166666668 845.4999999999999" width="1427.9494166666668" height="845.4999999999999" style="--bg:#FFFFFF;--fg:#27272A">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<g class="subgraph" data-id="pipeline" data-label="Agentic Pipeline Sequence">
+  <rect x="1163.5764166666668" y="40" width="224.373" height="606.3" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="1163.5764166666668" y="40" width="224.373" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="1175.5764166666668" y="54" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Agentic Pipeline Sequence</text>
+</g>
+<polyline class="edge" data-from="A" data-to="B" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="POST request" points="1066.7416875,768.5999999999999 1066.7416875,756.5999999999999 1042.5390000000002,756.5999999999999 1042.5390000000002,100.89999999999998 721.65175,100.89999999999998 721.65175,76.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="B" data-to="C" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="619.943625,76.9 619.943625,88.89999999999998 122.8485,88.89999999999998 122.8485,104.45" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="B" data-to="D" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="640.28525,76.9 640.28525,100.89999999999998 304.319,100.89999999999998 304.319,104.45" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="B" data-to="E" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="660.6268749999999,76.9 660.6268749999999,112.89999999999998 493.94050000000004,112.89999999999998 493.94050000000004,104.45" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="B" data-to="F" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="680.9685,76.9 680.9685,104.45" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="B" data-to="G" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="701.310125,76.9 701.310125,112.89999999999998 876.5179999999999,112.89999999999998 876.5179999999999,104.45" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="B" data-to="A" data-style="dotted" data-arrow-start="false" data-arrow-end="true" data-label="SSE Progress Logs" points="741.9933749999999,76.9 741.9933749999999,88.89999999999998 1145.8110000000001,88.89999999999998 1145.8110000000001,756.5999999999999 1111.1060208333333,756.5999999999999 1111.1060208333333,768.5999999999999" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="G7" data-to="H" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Final State JSON" points="1275.7629166666668,630.3 1275.7629166666668,768.5999999999999" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="G1" data-to="G2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1275.7629166666668,141.35000000000002 1275.7629166666668,168.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="G2" data-to="G3" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1275.7629166666668,205.8 1275.7629166666668,253.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="G3" data-to="G4" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1275.7629166666668,290.70000000000005 1275.7629166666668,338.70000000000005" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="G4" data-to="G5" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1275.7629166666668,375.6 1275.7629166666668,423.6" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="G5" data-to="G6" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1275.7629166666668,460.5 1275.7629166666668,508.5" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="G6" data-to="G7" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1275.7629166666668,545.4 1275.7629166666668,593.4" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="edge-label" data-from="A" data-to="B" data-label="POST request">
+  <rect x="1000.0390000000002" y="695.3" width="84.772" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1042.4250000000002" y="710.4499999999999" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">POST request</text>
+</g>
+<g class="edge-label" data-from="B" data-to="A" data-label="SSE Progress Logs">
+  <rect x="1088.8110000000001" y="695.3" width="113.878" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1145.7500000000002" y="710.4499999999999" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">SSE Progress Logs</text>
+</g>
+<g class="edge-label" data-from="G7" data-to="H" data-label="Final State JSON">
+  <rect x="1226.7629166666666" y="695.3" width="97.246" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="1275.3859166666666" y="710.4499999999999" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Final State JSON</text>
+</g>
+<g class="node" data-id="A" data-label="React Frontend" data-shape="rectangle">
+  <rect x="1022.3773541666667" y="768.5999999999999" width="133.09300000000002" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1088.9238541666666" y="787.05" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">React Frontend</text>
+</g>
+<g class="node" data-id="B" data-label="FastAPI Coordinator" data-shape="rectangle">
+  <rect x="599.602" y="40" width="162.733" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="680.9685" y="58.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">FastAPI Coordinator</text>
+</g>
+<g class="node" data-id="C" data-label="Nominatim Geocoding" data-shape="rectangle">
+  <rect x="40" y="104.45" width="165.697" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="122.8485" y="122.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Nominatim Geocoding</text>
+</g>
+<g class="node" data-id="D" data-label="Weather Service" data-shape="rectangle">
+  <rect x="233.697" y="104.45" width="141.244" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="304.319" y="122.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Weather Service</text>
+</g>
+<g class="node" data-id="E" data-label="OSM Overpass Service" data-shape="rectangle">
+  <rect x="402.94100000000003" y="104.45" width="181.99899999999997" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="493.94050000000004" y="122.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">OSM Overpass Service</text>
+</g>
+<g class="node" data-id="F" data-label="Search Service" data-shape="rectangle">
+  <rect x="612.9399999999999" y="104.45" width="136.05700000000002" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="680.9685" y="122.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Search Service</text>
+</g>
+<g class="node" data-id="G" data-label="Agentic Pipeline Sequence" data-shape="rectangle">
+  <rect x="776.997" y="104.45" width="199.042" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="876.5179999999999" y="122.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Agentic Pipeline Sequence</text>
+</g>
+<g class="node" data-id="H" data-label="Render Dashboard" data-shape="rectangle">
+  <rect x="1198.1014166666669" y="768.5999999999999" width="155.32299999999998" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1275.7629166666668" y="787.05" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Render Dashboard</text>
+</g>
+<g class="node" data-id="G1" data-label="Destination Agent" data-shape="rectangle">
+  <rect x="1204.0294166666667" y="104.45" width="143.467" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1275.7629166666668" y="122.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Destination Agent</text>
+</g>
+<g class="node" data-id="G2" data-label="Weather Agent" data-shape="rectangle">
+  <rect x="1211.8099166666668" y="168.9" width="127.90599999999999" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1275.7629166666668" y="187.35000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Weather Agent</text>
+</g>
+<g class="node" data-id="G3" data-label="Attractions Agent" data-shape="rectangle">
+  <rect x="1204.7704166666667" y="253.8" width="141.985" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1275.7629166666668" y="272.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Attractions Agent</text>
+</g>
+<g class="node" data-id="G4" data-label="Budget Agent" data-shape="rectangle">
+  <rect x="1215.8854166666667" y="338.70000000000005" width="119.75500000000001" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1275.7629166666668" y="357.15000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Budget Agent</text>
+</g>
+<g class="node" data-id="G5" data-label="Transport and Stay Agent" data-shape="rectangle">
+  <rect x="1179.5764166666668" y="423.6" width="192.373" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1275.7629166666668" y="442.05" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Transport and Stay Agent</text>
+</g>
+<g class="node" data-id="G6" data-label="Travel Tips Agent" data-shape="rectangle">
+  <rect x="1202.1769166666668" y="508.5" width="147.17200000000003" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1275.7629166666668" y="526.95" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Travel Tips Agent</text>
+</g>
+<g class="node" data-id="G7" data-label="Itinerary Agent" data-shape="rectangle">
+  <rect x="1211.4394166666668" y="593.4" width="128.647" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1275.7629166666668" y="611.85" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Itinerary Agent</text>
+</g>
+</svg>
