@@ -119,7 +119,7 @@ tripPlanner/
 
 ## 📊 Data Architecture (`TripState`)
 
-All data between the backend agents and the frontend dashboard is synchronized via a centralized `TripState` schema defined with Pydantic in [state.py](file:///d:/tripPlanner/backend/agents/state.py):
+All data between the backend agents and the frontend dashboard is synchronized via a centralized `TripState` schema defined with Pydantic in [state.py](backend/agents/state.py):
 
 *   **`user_inputs`**: User selections (`destination`, `duration`, `budget_tier`, `travel_style`, `interests`, `constraints`).
 *   **`resolved_location`**: Coordinates (`lat`, `lon`) and full `display_name`.
