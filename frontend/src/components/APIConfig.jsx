@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Key, Eye, EyeOff, ShieldCheck, Settings, Globe, CloudSun, Check, Sparkles } from "lucide-react";
+import { Eye, EyeOff, ShieldCheck, Settings, Globe, CloudSun, Check, Sparkles } from "lucide-react";
 
 export default function APIConfig({
   llmProvider,

@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { 
   Calendar, Hotel, CircleDollarSign, CloudSun, Compass, 
   MapPin, Clock, DollarSign, Download, Check, Landmark,
-  Bot, Terminal, AlertTriangle, ShieldCheck, HelpCircle, Info, Sparkles
+  Terminal, AlertTriangle, Info, Sparkles
 } from "lucide-react";
 
 export default function TripDashboard({ tripData, onReset }) {
