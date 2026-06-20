@@ -24,24 +24,24 @@ TripPlanner.AI runs as a sequential, multi-agent pipeline orchestrated by a cent
 
 ```mermaid
 graph TD
-    A[Frontend: React Form Submit] -->|POST /api/plan| B[Backend: FastAPI Coordinator]
-    B --> C[Service: Nominatim Geocoding]
-    B --> D[Service: WeatherAPI / Open-Meteo]
-    B --> E[Service: OpenStreetMap Overpass]
-    B --> F[Service: Brave Search / Web Fallbacks]
-    B --> G[Agentic Pipeline Sequence]
+    A["Frontend: React Form Submit"] -->|"POST /api/plan"| B["Backend: FastAPI Coordinator"]
+    B --> C["Service: Nominatim Geocoding"]
+    B --> D["Service: WeatherAPI / Open-Meteo"]
+    B --> E["Service: OpenStreetMap Overpass"]
+    B --> F["Service: Brave Search / Web Fallbacks"]
+    B --> G["Agentic Pipeline Sequence"]
     
     subgraph Agentic Pipeline Sequence
-        G1[Destination Agent] --> G2[Weather Agent]
-        G2 --> G3[Attractions Agent]
-        G3 --> G4[Budget Agent]
-        G4 --> G5[Transport & Stay Agent]
-        G5 --> G6[Travel Tips Agent]
-        G6 --> G7[Itinerary Agent]
+        G1["Destination Agent"] --> G2["Weather Agent"]
+        G2 --> G3["Attractions Agent"]
+        G3 --> G4["Budget Agent"]
+        G4 --> G5["Transport & Stay Agent"]
+        G5 --> G6["Travel Tips Agent"]
+        G6 --> G7["Itinerary Agent"]
     end
     
-    G7 -->|Final State JSON| H[Frontend: Render Dashboard]
-    B -.->|Server-Sent Events progress logs| A
+    G7 -->|"Final State JSON"| H["Frontend: Render Dashboard"]
+    B -.->|"Server-Sent Events progress logs"| A
 ```
 
 ### Specialist Agents
