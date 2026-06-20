@@ -22,6 +22,11 @@ An AI-powered multi-agent travel coordinator with a Python FastAPI backend and a
 
 TripPlanner.AI runs as a sequential, multi-agent pipeline orchestrated by a central coordinator.
 
+![System Architecture & Workflow](docs/architecture.png)
+
+<details>
+<summary>Show Mermaid Source Code</summary>
+
 ```mermaid
 graph TD
     A[React Frontend] -->|POST request| B[FastAPI Coordinator]
@@ -43,6 +48,7 @@ graph TD
     G7 -->|Final State JSON| H[Render Dashboard]
     B -.->|SSE Progress Logs| A
 ```
+</details>
 
 ### Specialist Agents
 - **Coordinator**: Resolves coordinates, fetches external APIs, passes state data, and handles fail-safes/fallbacks.
